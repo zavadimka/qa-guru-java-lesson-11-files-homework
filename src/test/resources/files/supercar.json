@@ -1,0 +1,28 @@
+{
+  "manufacturer": "Bugatti",
+  "model": "Divo",
+  "carEngine": {
+    "configuration": "W",
+    "numberOfCylinders": 16,
+    "displacement": 8.0,
+    "power": 1500,
+    "maxTorque": 1600
+  },
+  "transmission": {
+    "type": "DSG",
+    "gearsNumber": 7
+  },
+  "drive": "all-wheel",
+  "performance": {
+    "acceleration": 2.4,
+    "maxSpeed": 380
+  },
+  "price": 5500000,
+  "features": [
+    "aggressive design",
+    "improved aerodynamics",
+    "lightweight construction",
+    "improved maneuverability",
+    "limited edition of 40"
+  ]
+}

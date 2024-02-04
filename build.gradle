@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.zavadimka'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def junitVersion = "5.10.1",
+    selenideVersion = "6.19.1",
+    slf4jVersion = "2.0.9",
+    commonsIOVersion = "2.15.1",
+    pdfTestVersion = "1.5.0",
+    xlsTestVersion = "1.4.3",
+    opencsvVersion = "5.9",
+    jacksonVersion = "2.13.1"
+
+dependencies {
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "com.codeborne:selenide:$selenideVersion",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "commons-io:commons-io:$commonsIOVersion",
+            "com.codeborne:pdf-test:$pdfTestVersion",
+            "com.codeborne:xls-test:$xlsTestVersion",
+            "com.opencsv:opencsv:$opencsvVersion",
+            "com.fasterxml.jackson.core:jackson-core:$jacksonVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
