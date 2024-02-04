@@ -15,9 +15,9 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-public class csvInZipParsingTests {
+public class СsvInZipParsingTests {
 
-    private final ClassLoader cl = csvInZipParsingTests.class.getClassLoader();
+    private final ClassLoader cl = СsvInZipParsingTests.class.getClassLoader();
     String filePath = "files/supercars_csv.zip";
     String[] titlesToCheck = new String[]{
             "Производитель",
